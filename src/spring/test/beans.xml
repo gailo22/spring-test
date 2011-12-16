@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- <bean/> definitions here -->
+
+<bean id="myService1" class="spring.test.MyServiceImpl" />
+
+<bean name="myService" id="myService" class="spring.test.MyServiceImpl" />
+
+<bean id="a" class="spring.test.A" scope="prototype"/>
+<bean id="b" class="spring.test.B" scope="singleton">
+    <property name="a" ref="a" />
+</bean>
+
+</beans>
