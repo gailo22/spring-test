@@ -36,8 +36,9 @@ public class RestTemplateTest {
         URI newCustomertLocation = restTemplate.postForLocation(url, customer);
         System.out.println(newCustomertLocation);
         
-//        Customer newCustomer = restTemplate.getForObject(newCustomertLocation, Customer.class);
-//        System.out.println(newCustomer);
+        Customer newCustomer = restTemplate.getForObject(newCustomertLocation, Customer.class);
+        System.out.println(newCustomer.getId());
+        System.out.println(newCustomer.getName());
     }
     
 }
