@@ -4,10 +4,13 @@
  */
 package spring.test;
 
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author User
  */
+@Service("myService")
 public class MyServiceImpl implements MyService {
 
     @Override

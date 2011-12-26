@@ -4,6 +4,8 @@
  */
 package spring.test;
 
+import org.springframework.stereotype.Service;
+
 /**
  *
  * @author User
