@@ -1,6 +1,1 @@
-/build/
-/nbproject
-/nbproject/private/
-build.xml
-catalog.xml
-manifest.mf
+/target/
